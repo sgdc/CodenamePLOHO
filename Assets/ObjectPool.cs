@@ -9,6 +9,7 @@ public class ObjectPool : MonoBehaviour {
     public int initialSize = 300;
 
 	void Start () {
+        pool = new List<GameObject>();
         for (int i = 0; i < initialSize; i++)
         {
             GameObject obj = (GameObject)Instantiate(pooledObject);

@@ -4,7 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
     public int ID;
-    private string name;
+    private string playerName;
     public PlayerShip ship;
 
 	// Use this for initialization

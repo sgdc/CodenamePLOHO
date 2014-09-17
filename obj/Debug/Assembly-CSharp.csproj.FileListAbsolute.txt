@@ -1,0 +1,11 @@
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\obj\Debug\Assembly-CSharp.dll
+C:\Users\Matt\Documents\CodenamePLOHO\CodenamePLOHO\obj\Debug\Assembly-CSharp.pdb
