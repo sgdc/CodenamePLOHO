@@ -1,7 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{27F6D00F-D4A3-0169-D2BA-20581123A683}") = "JPGame", "Assembly-CSharp.csproj", "{FAD6B8BD-ECD1-51F1-AB94-92A5D98ED0A2}"
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F9339137-631E-BF5B-8CB1-8485EC379E09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,15 +8,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FAD6B8BD-ECD1-51F1-AB94-92A5D98ED0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FAD6B8BD-ECD1-51F1-AB94-92A5D98ED0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FAD6B8BD-ECD1-51F1-AB94-92A5D98ED0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FAD6B8BD-ECD1-51F1-AB94-92A5D98ED0A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9339137-631E-BF5B-8CB1-8485EC379E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9339137-631E-BF5B-8CB1-8485EC379E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9339137-631E-BF5B-8CB1-8485EC379E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9339137-631E-BF5B-8CB1-8485EC379E09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																				GlobalSection(MonoDevelopProperties) = preSolution
+	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -35,5 +34,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal

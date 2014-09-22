@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FAD6B8BD-ECD1-51F1-AB94-92A5D98ED0A2}</ProjectGuid>
+    <ProjectGuid>{F9339137-631E-BF5B-8CB1-8485EC379E09}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>
@@ -47,12 +47,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Bullet\BulletLogic.cs" />
+    <Compile Include="Assets\Bullet Behaviors\Bullet.cs" />
     <Compile Include="Assets\ObjectPool.cs" />
-    <Compile Include="Assets\Player\Player.cs" />
-    <Compile Include="Assets\Player\PlayerInput.cs" />
-    <Compile Include="Assets\Player\PlayerShip.cs" />
+    <Compile Include="Assets\Player Behaviors\Player.cs" />
+    <Compile Include="Assets\Player Behaviors\PlayerInput.cs" />
+    <Compile Include="Assets\Player Behaviors\PlayerShip.cs" />
+    <Compile Include="Assets\Ship Behaviors\BaseShip.cs" />
+    <Compile Include="Assets\Ship Behaviors\Weapons\LargeCannon.cs" />
+    <Compile Include="Assets\Ship Behaviors\Weapons\LaserCannon.cs" />
+    <Compile Include="Assets\Ship Behaviors\Weapons\IWeapon.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
 	   Other similar extension points exist, see Microsoft.Common.targets.

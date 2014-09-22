@@ -46,11 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Bullet\BulletLogic.cs" />
+     <Compile Include="Assets\Bullet Behaviors\Bullet.cs" />
      <Compile Include="Assets\ObjectPool.cs" />
-     <Compile Include="Assets\Player\Player.cs" />
-     <Compile Include="Assets\Player\PlayerInput.cs" />
-     <Compile Include="Assets\Player\PlayerShip.cs" />
+     <Compile Include="Assets\Player Behaviors\Player.cs" />
+     <Compile Include="Assets\Player Behaviors\PlayerInput.cs" />
+     <Compile Include="Assets\Player Behaviors\PlayerShip.cs" />
+     <Compile Include="Assets\Ship Behaviors\BaseShip.cs" />
+     <Compile Include="Assets\Ship Behaviors\Weapons\IWeapon.cs" />
+     <Compile Include="Assets\Ship Behaviors\Weapons\LargeCannon.cs" />
+     <Compile Include="Assets\Ship Behaviors\Weapons\LaserCannon.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

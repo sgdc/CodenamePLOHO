@@ -33,6 +33,7 @@ public class ObjectPool : MonoBehaviour {
             GameObject obj = (GameObject)Instantiate(pooledObject);
             obj.SetActive(false);
             pool.Add(obj);
+            return obj;
         }
 
         return null;
