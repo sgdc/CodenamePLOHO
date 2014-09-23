@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bullet : MonoBehaviour {
+public class PlayerBullet : MonoBehaviour {
 
     public int Damage;
     public float Speed;

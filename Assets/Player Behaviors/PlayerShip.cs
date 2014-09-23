@@ -4,12 +4,11 @@ using System.Collections.Generic;
 public class PlayerShip : MonoBehaviour {
 
     public ObjectPool BulletManager;
-    public GameObject laserCannon;
     public float speed = 3;
     public List<IWeapon> weapons = new List<IWeapon>();
     private static List<List<IWeapon>> weaponLoadouts = new List<List<IWeapon>>();
 
-    public void Start()
+    private void LoadWeaponLayouts()
     {
         Transform[] weaponPositions = gameObject.GetComponentsInChildren<Transform>();
         weaponLoadouts.Add(new List<IWeapon> {  
@@ -19,10 +18,27 @@ public class PlayerShip : MonoBehaviour {
         weaponLoadouts.Add(new List<IWeapon> {  
             new LaserCannon(BulletManager, weaponPositions[1]),
             new LaserCannon(BulletManager, weaponPositions[2]),
-            new LargeCannon(BulletManager, weaponPositions[3]) 
+            new LaserCannon(BulletManager, weaponPositions[3]) 
         });
+        weaponLoadouts.Add(new List<IWeapon> {  
+            new LaserCannon(BulletManager, weaponPositions[1]),
+            new LaserCannon(BulletManager, weaponPositions[2]),
+            new LaserCannon(BulletManager, weaponPositions[4]),
+            new LaserCannon(BulletManager, weaponPositions[5])
+        });
+        weaponLoadouts.Add(new List<IWeapon> {
+            new LaserCannon(BulletManager, weaponPositions[1]),
+            new LaserCannon(BulletManager, weaponPositions[2]),
+            new LargeCannon(BulletManager, weaponPositions[3]),
+            new LaserCannon(BulletManager, weaponPositions[4]),
+            new LaserCannon(BulletManager, weaponPositions[5])
+        });
+    }
 
-        weapons = weaponLoadouts[1];
+    public void Start()
+    {
+        LoadWeaponLayouts();
+        weapons = weaponLoadouts[3];
     }
 
     public void Fire()

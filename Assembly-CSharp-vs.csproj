@@ -46,7 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Bullet Behaviors\Bullet.cs" />
+     <Compile Include="Assets\Bullet Behaviors\PlayerBullet.cs" />
      <Compile Include="Assets\ObjectPool.cs" />
      <Compile Include="Assets\Player Behaviors\Player.cs" />
      <Compile Include="Assets\Player Behaviors\PlayerInput.cs" />
