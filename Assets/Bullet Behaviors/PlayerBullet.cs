@@ -3,8 +3,8 @@ using System.Collections;
 
 public class PlayerBullet : MonoBehaviour {
 
-    public int Damage;
-    public float Speed;
+    public int Damage = 1;
+    public float Speed = 20;
 
     void OnEnable()
     {
@@ -14,6 +14,11 @@ public class PlayerBullet : MonoBehaviour {
     void Kill()
     {
         gameObject.SetActive(false);
+    }
+
+    void OnDisable()
+    {
+        CancelInvoke("Kill");
     }
 
 	// Update is called once per frame

@@ -12,9 +12,8 @@ public class ObjectPool : MonoBehaviour {
         pool = new List<GameObject>();
         for (int i = 0; i < initialSize; i++)
         {
-            GameObject obj = (GameObject)Instantiate(pooledObject);
-            obj.SetActive(false);
-            pool.Add(obj);
+            GameObject bullet = InitBullet();
+            pool.Add(bullet);
         }
 	}
 
@@ -30,12 +29,19 @@ public class ObjectPool : MonoBehaviour {
 
         if (canGrow)
         {
-            GameObject obj = (GameObject)Instantiate(pooledObject);
-            obj.SetActive(false);
+            GameObject obj = InitBullet();
             pool.Add(obj);
             return obj;
         }
 
         return null;
+    }
+
+    GameObject InitBullet()
+    {
+        GameObject obj = (GameObject)Instantiate(pooledObject);
+        obj.transform.parent = this.transform;
+        obj.SetActive(false);
+        return obj;
     }
 }
