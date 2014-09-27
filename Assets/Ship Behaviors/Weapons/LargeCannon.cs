@@ -4,6 +4,7 @@ using System.Collections;
 public class LargeCannon : IWeapon
 {
     private const float fireSpeed = 0.25f;
+    private const int weaponDamage = 4;
     private float lastFireTime;
     private ObjectPool pool;
     private Transform weaponPosition;
@@ -19,12 +20,13 @@ public class LargeCannon : IWeapon
         if (Time.time > fireSpeed + lastFireTime)
         {
             lastFireTime = Time.time;
-            GameObject bullet = pool.GetNextObject();
-            if (bullet == null) return;
+            PlayerBullet pb = pool.GetNextObject().GetComponent<PlayerBullet>();
+            if (pb == null) return;
 
-            bullet.transform.position = weaponPosition.position + new Vector3(0, 0.5f);
-            bullet.transform.rotation = weaponPosition.rotation;
-            bullet.SetActive(true);
+            pb.transform.position = weaponPosition.position + new Vector3(0, 0.5f);
+            pb.transform.rotation = weaponPosition.rotation;
+            pb.Damage = weaponDamage;
+            pb.gameObject.SetActive(true);
         }
     }
 }

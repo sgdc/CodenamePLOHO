@@ -1,9 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ObjectPool.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt">
     <Files>
+      <File FileName="Assets\Plugins\iTween.cs" Line="1" Column="1" />
       <File FileName="Assets\Ship Behaviors\Weapons\IWeapon.cs" Line="1" Column="1" />
       <File FileName="Assets\ObjectPool.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
