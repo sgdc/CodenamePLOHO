@@ -125,6 +125,12 @@ public class PlayerShip : MonoBehaviour {
             //Handle Collisions
             coll.gameObject.SetActive(false);
         }
+        if (coll.gameObject.tag == "Enemy Ship")
+        {
+            Debug.Log("Ship was Hit");
+            //Handle Collisions
+            Destroy(coll.gameObject);
+        }
     }
 
 }
