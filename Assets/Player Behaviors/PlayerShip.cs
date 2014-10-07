@@ -7,6 +7,7 @@ public class PlayerShip : MonoBehaviour {
     public float speed = 3;
     public List<IWeapon> weapons = new List<IWeapon>();
     private static List<List<IWeapon>> weaponLoadouts = new List<List<IWeapon>>();
+    public Player player;
 
     private void LoadWeaponLayouts()
     {
@@ -125,12 +126,21 @@ public class PlayerShip : MonoBehaviour {
             //Handle Collisions
             coll.gameObject.SetActive(false);
         }
+        else
         if (coll.gameObject.tag == "Enemy Ship")
         {
             Debug.Log("Ship was Hit");
             //Handle Collisions
             Destroy(coll.gameObject);
         }
+        else
+        if (coll.gameObject.tag == "Floater")
+        {
+            Debug.Log("Ship got a point");
+            player.points += 100;
+            Destroy(coll.gameObject);
+        }
+        
     }
 
 }

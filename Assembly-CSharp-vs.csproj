@@ -49,8 +49,10 @@
      <Compile Include="Assets\Bullet Behaviors\EnemyBullet.cs" />
      <Compile Include="Assets\Bullet Behaviors\PlayerBullet.cs" />
      <Compile Include="Assets\EnemySpawner.cs" />
+     <Compile Include="Assets\Floater.cs" />
      <Compile Include="Assets\ObjectPool.cs" />
      <Compile Include="Assets\Player Behaviors\Player.cs" />
+     <Compile Include="Assets\Player Behaviors\PlayerCamera.cs" />
      <Compile Include="Assets\Player Behaviors\PlayerInput.cs" />
      <Compile Include="Assets\Player Behaviors\PlayerShip.cs" />
      <Compile Include="Assets\Ship Behaviors\Enemies\EnemyShip.cs" />

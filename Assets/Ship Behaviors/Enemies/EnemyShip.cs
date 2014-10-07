@@ -8,6 +8,7 @@ public class EnemyShip : MonoBehaviour {
     public int Health;
     public ObjectPool BulletManager;
     public iTweenPath path;
+    public Floater floater;
 
     private IWeapon weapon;
     private float pathTime;
@@ -20,6 +21,8 @@ public class EnemyShip : MonoBehaviour {
 
     private void Kill()
     {
+        for (int i = 0; i < Random.Range(1,3); i++)
+            Instantiate(floater,transform.position + new Vector3(Random.insideUnitCircle.x,Random.insideUnitCircle.y),transform.rotation);
         Destroy(gameObject);
     }
 
